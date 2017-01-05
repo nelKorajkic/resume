@@ -7,6 +7,6 @@
 </g>
 <image overflow="visible" width="1000" height="298" xlink:href="topbar.png"  transform="matrix(0.9999 0 0 0.9999 0.0625 0.0186)">
 </image>
-<polygon fill="#42AAE0" stroke="#000000" stroke-miterlimit="10" points="0.062,277.5 999.938,93.5 999.938,0.019 0.062,0.019 "/>
+<polygon fill="#42AAE0" points="0.062,277.5 999.938,93.5 999.938,0.019 0.062,0.019 "/>
 <polygon fill="#44ABE0" points="0.062,282.5 0.062,297.981 999.938,116.5 999.938,99.5 "/>
 </svg>

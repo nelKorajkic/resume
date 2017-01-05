@@ -2,18 +2,23 @@ body {
   background: lightgray;
 }
 
-body .h1 {
-  font-family: 'Open Sans', sans-serif;
+body h1 {
+  font-family: 'Sans-Open', sans-serif;
   width: auto;
   align-content: center;
   text-align: center;
   font-size: 3em;
   color: #FFF;
+  text-transform: uppercase;
 }
 
-body img {
+body .test {
+  width: 1800px;
+  margin: 0;
   padding: 0;
-  color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
 }
 
 @media screen and (max-width: 500px) {
