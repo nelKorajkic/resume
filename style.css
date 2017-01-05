@@ -11,8 +11,16 @@ body .h1 {
   color: #FFF;
 }
 
+body img {
+  padding: 0;
+  color: black;
+}
+
 @media screen and (max-width: 500px) {
   body {
     background-color: red;
+  }
+  body .h1 {
+    font-size: 1em;
   }
 }
