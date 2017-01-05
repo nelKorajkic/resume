@@ -5,11 +5,7 @@ body {
   align-content: center;
   text-align: center;
   font-size: 2em;
-  color: #FFF;
-}
-
-@media screen and (max-width: 500px) {
-  body {
-    background-color: red;
-  }
-}
+  color: #FFF; }
+  @media screen and (max-width: 500px) {
+    body {
+      background-color: red; } }
