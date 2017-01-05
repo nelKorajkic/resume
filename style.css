@@ -1,31 +1,49 @@
 body {
   background: lightgray;
+  margin: 0;
+}
+
+body nav {
+  display: flex;
+  font-family: 'Sans-Open', sans-serif;
+  width: auto;
+  font-size: 3em;
+  color: red;
+  background-color: black;
+  z-index: 1;
 }
 
 body h1 {
   font-family: 'Sans-Open', sans-serif;
   width: auto;
+  margin-top: -40px;
   align-content: center;
   text-align: center;
   font-size: 3em;
   color: #FFF;
   text-transform: uppercase;
+  z-index: 1;
 }
 
-body .test {
-  width: 1800px;
-  margin: 0;
+body header {
+  margin: 0px;
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+body header img {
   padding: 0;
+  margin: 0;
+  width: 2500px;
 }
 
 @media screen and (max-width: 500px) {
   body {
     background-color: red;
   }
-  body .h1 {
-    font-size: 1em;
+  body h1 {
+    font-size: 2em;
+    padding-top: 50px;
   }
 }
