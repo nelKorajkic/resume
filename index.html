@@ -1,5 +1,6 @@
 <!DOCTYPE html 5>
 <head>
+  <script src="scripts/blur.js"></script>
   <link rel="stylesheet" href="style.min.css"/>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,400,700" rel="stylesheet"/>
   <title>Nel Korajkic</title>
@@ -17,9 +18,15 @@
         </ul>
       </div>
     </nav>
-  </header>
+  </header><a href="#popup1" class="box">Printing? Click here!<a href="#popup1" class="button">Printing? Click here!</a></a>
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <h1>Printers Rejoice!</h1><a href="#" class="close">×</a>
+      <div class="content">If you plan to print this webpage, it will format itself to be printer friendly! :)  </div>
+    </div>
+  </div>
   <div class="container2">
-    <h1>Nel Korajkic</h1><img src="images/myPic.png"/>
+    <h1 class="out">Nel Korajkic</h1><img src="images/myPic.png"/>
     <ul>
       <li>Burlington, Vermont</li>
       <li>Web Developer // Designer</li>

@@ -1,3 +1,8 @@
+.blurry-text {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
 body {
   font-family: 'Sans-Open', sans-serif;
   background: lightgray;
@@ -40,7 +45,7 @@ body header nav .container ul li a {
 }
 
 body header nav .container ul li a:hover {
-  color: red;
+  color: #00ff00;
 }
 
 body header img {
@@ -57,6 +62,7 @@ body .container2 h1 {
   text-align: center;
   font-size: 2.5em;
   text-transform: uppercase;
+  padding-top: 15px;
 }
 
 body .container2 img {
@@ -85,15 +91,154 @@ body .container2 p {
   margin: 0 200 0 200;
 }
 
-@media screen and (max-width: 500px) {
-  body {
-    background-color: red;
+@keyframes fadein {
+  from {
+    opacity: .5;
+    right: -200;
   }
-  body h1 {
+  to {
+    opacity: 1;
+    right: 10;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+    right: -200;
+  }
+  to {
+    opacity: 1;
+    right: 10;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+    right: -200;
+  }
+  to {
+    opacity: 1;
+    right: 10;
+  }
+}
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+    right: -200;
+  }
+  to {
+    opacity: 1;
+    right: 10;
+  }
+}
+
+a.box {
+  color: white;
+  text-decoration: none;
+  position: fixed;
+  right: 10;
+  animation: fadein 2s;
+  float: right;
+  z-index: 1;
+  width: 20%;
+  margin: 10px auto;
+  background: rgba(60, 60, 60, 0.5);
+  padding: 12px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+
+a.button {
+  font-size: 1em;
+  padding: 0px;
+  width: auto;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 400ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.button:hover, .box:hover {
+  background: #00ff00;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 1px;
+  width: 30%;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: -10px;
+  color: #333;
+}
+
+.popup .close {
+  position: absolute;
+  top: 10px;
+  padding-bottom: 10px;
+  right: 30px;
+  transition: all 200ms;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #00ff00;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .box, .popup {
+    width: 50%;
+  }
+  background-color: red;
+  h1 {
     font-size: 2em;
     padding-top: 50px;
   }
-  body p {
+  p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  background-color: red;
+  h1 {
+    font-size: 2em;
+    padding-top: 50px;
+  }
+  p {
     font-size: 1em;
   }
 }

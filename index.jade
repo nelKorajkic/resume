@@ -1,6 +1,7 @@
 //output:index.html
 doctype html 5
 head
+  script(src="scripts/blur.js")
   link(rel="stylesheet", href="style.min.css" )
   link(href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,400,700", rel="stylesheet")
   title Nel Korajkic
@@ -20,11 +21,18 @@ body
           a(href="") Work
         li 
           a(href="") Contact
-  
+
+  a.box(href='#popup1') Printing? Click here!
+    a.button(href='#popup1') Printing? Click here!
+  #popup1.overlay
+    .popup
+      h1 Printers Rejoice!
+      a.close(href='#') ×
+      .content
+        | If you plan to print this webpage, it will format itself to be printer friendly! :)  
   
   .container2
-    h1 Nel Korajkic
-    
+    h1(class="out") Nel Korajkic
     img(src="images/myPic.png")
     ul
       li Burlington, Vermont
