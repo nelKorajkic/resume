@@ -11,6 +11,27 @@ body {
   margin: 0;
 }
 
+body p {
+  text-align: justify;
+  line-height: 1.3;
+  width: auto;
+  margin: 0 200 0 200;
+}
+
+body #personalScroll {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-left: 200;
+  margin-right: 200;
+}
+
+body #contactScroll {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-left: 200;
+  margin-right: 200;
+}
+
 body header nav {
   background: url("images/topbar2.svg");
   position: fixed;
@@ -79,25 +100,10 @@ body .container2 ul {
   text-align: center;
 }
 
-body .container2 p {
-  text-align: justify;
-  line-height: 1.3;
+body .container2 ul img {
+  fill: #414141;
+  position: relative;
   width: auto;
-  margin: 0 200 0 200;
-}
-
-#personalScroll {
-  text-transform: uppercase;
-  font-size: 2em;
-  margin-left: 200;
-  margin-right: 200;
-}
-
-#contactScroll {
-  text-transform: uppercase;
-  font-size: 2em;
-  margin-left: 200;
-  margin-right: 200;
 }
 
 @keyframes fadein {
@@ -162,16 +168,6 @@ a.box {
   transition: all 0.3s ease-out;
 }
 
-a.button {
-  font-size: 1em;
-  padding: 0px;
-  width: auto;
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -191,6 +187,10 @@ a.button {
 
 .button:hover, .box:hover {
   background: #00ff00;
+}
+
+.button:active, .box:active {
+  visibility: hidden;
 }
 
 .popup {
