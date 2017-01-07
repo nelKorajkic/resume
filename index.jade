@@ -1,15 +1,14 @@
 //output:index.html
+
 doctype html 5
+//Made by Nel Korajkic.
+//1.4.16
 head
-    script(src="scripts/time.js")
     //script(src="scripts/blur.js")
     link(rel="stylesheet", href="style.min.css" )
     link(href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,400,700", rel="stylesheet")
     link(rel="icon", href="images/favicon.png")
     title NEL KORAJKIC
-
-
-
 
 body
     header
@@ -17,15 +16,15 @@ body
             .container
                 ul 
                     li 
-                        a#personalLink.personalClass(href='#', rel='') Personal
+                        a#personalLink(href='#') Personal
                     li 
-                        a#skillsLink.skillsClass(href='#', rel='') Skills
+                        a#skillsLink(href='#') Skills
                     li 
-                        a#educationLink.educationClass(href='#', rel='') Education
+                        a#educationLink(href='#') Education
                     li 
-                        a#workLink.workClass(href='#', rel='') Work
+                        a#workLink(href='#') Work
                     li 
-                        a#contactLink.contactClass(href='#', rel='') Contact
+                        a#contactLink(href='#') Contact
 
     a.box(href='#popup1') Printing? Click here! 
     #popup1.overlay
@@ -37,21 +36,22 @@ body
 
 .container2
     h1(class="out") Nel Korajkic
-    img(src="images/myPic.png")
-    ul
-        img(src="images/place.svg")
-        li Burlington, Vermont
+    img.blurred-image(src="images/myPic.png")
+    ul  
+        .tagline
+          img(src="images/place.svg")
+          li Burlington, Vermont
         li Web Developer // Designer
 
     a#personalScroll(name='personalScroll')
         strong 
     p My name is 
-      b Nel Korajkic, 
-      |I'm currently a student at 
-      b The University of Vermont 
-      | located in lovely 
-      b Burlington, Vermont. 
-      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        b Nel Korajkic, 
+        |I'm currently a student at 
+        b The University of Vermont 
+        | located in lovely 
+        b Burlington, Vermont. 
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
     a#skillsScroll(name='skillsScroll')
         strong awards & skills
@@ -64,15 +64,16 @@ a#workScroll(name='workScroll')
     strong work
 p hello Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
 
-a#contactScroll(name='contactScroll')
-.contactContainer
-    strong contact
-    pre Name: Nel Korajkic 
-      |Address: 126 Northgate Rd, Burlington VT 05408 
-      |Phone Number: 802-488-0152
-      |Email: 
-      a(href="mailto:nelkorajkic@gmail.com")  nelkorajkic@gmail.com
+footer 
+  a#contactScroll(name='contactScroll')
+  .contactContainer
+      strong contact
+      pre Name: Nel Korajkic 
+          |Address: 126 Northgate Rd, Burlington VT 05408 
+          |Phone Number: 802-488-0152
+          |Email: 
+          a(href="mailto:nelkorajkic@gmail.com")  nelkorajkic@gmail.com
 
 script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
 script(src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js")
-script(src="scripts/scroll.js")
+script(src="scripts/functionality.js")

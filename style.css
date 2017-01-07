@@ -124,11 +124,18 @@ body .container2 ul {
   margin: 0 200;
   width: auto;
   text-align: center;
+  display: block;
+}
+
+body .container2 ul .tagline {
+  display: inline-flex;
 }
 
 body .container2 ul img {
   fill: #414141;
   width: auto;
+  display: inline-block;
+  float: left;
 }
 
 @keyframes fadein {
