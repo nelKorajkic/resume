@@ -32,7 +32,7 @@ function timecheck(){
   else if (time >= 12 & time <= 23) {
   document.getElementById("personalScroll").innerHTML = 'Good Evening';
   }
-  else if (time >= 0 & time <= 3) {
+  else if (time >= 0 & time <= 4) {
   document.getElementById("personalScroll").innerHTML = 'Still up?' ;
 }}
 window.onload =timecheck;

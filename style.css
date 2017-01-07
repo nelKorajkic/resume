@@ -20,13 +20,39 @@ body .contactContainer {
   background-color: #414141;
 }
 
+body .linksContainer {
+  background-color: #414141;
+  width: auto;
+  margin: auto;
+  padding-left: 500px;
+  padding-right: 500px;
+  text-align: center;
+}
+
+body .linksContainer img {
+  size: 500px;
+  width: 120px;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 210px;
+  margin: auto;
+}
+
+body .linksContainer p {
+  color: white;
+  display: block;
+  margin: auto;
+  width: auto;
+  text-align: center;
+}
+
 body pre {
   font-family: 'Sans-Open', sans-serif;
-  text-align: justify;
+  text-align: left;
   line-height: 1.8;
   width: auto;
   font-size: 1em;
-  margin: 0 200 0 200;
+  margin: 0 230px;
   padding-bottom: 1em;
   text-decoration: none;
 }
@@ -40,7 +66,7 @@ body p {
   text-align: justify;
   line-height: 1.3;
   width: auto;
-  margin: 0 200 0 200;
+  margin: 0 230;
   padding-bottom: 1em;
 }
 
@@ -75,6 +101,12 @@ body header nav {
 
 body header nav .container {
   margin-top: 500px;
+}
+
+body header nav .container img {
+  background-color: red;
+  width: auto;
+  display: inline-block;
 }
 
 body header nav .container ul {
