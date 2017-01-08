@@ -106,7 +106,7 @@ $( document ).ready(function() {
       console.log('offset5:', offset5);
          if ( $(window).scrollTop() < offset2 )
              $('#one').show(100);
-          else {
+         else {
             $('#one').hide(100);
           }
         });
@@ -128,7 +128,7 @@ $( document ).ready(function() {
          $('#two').hide(100);
        }
      });
-     //doesnt work yet
+     //works
      $(window).on('scroll', function() {
        var offset = $('#personalScroll').offset().top-450;
        console.log('offset1',offset);
@@ -146,7 +146,7 @@ $( document ).ready(function() {
           $('#three').hide(100);
         }
       });
-      //doesnt work yet
+      //works
       $(window).on('scroll', function() {
         var offset = $('#personalScroll').offset().top-450;
         console.log('offset1',offset);
@@ -164,7 +164,7 @@ $( document ).ready(function() {
            $('#four').hide(100);
          }
        });
-       //doesnt work yet
+       //works
        $(window).on('scroll', function() {
          var offset = $('#personalScroll').offset().top-450;
          console.log('offset1',offset);
