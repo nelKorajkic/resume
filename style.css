@@ -49,6 +49,11 @@ body .contactContainer {
   background-color: #414141;
 }
 
+body .workSection hr {
+  border-bottom: 2px solid #f1c77d;
+  width: 20%;
+}
+
 body .linksContainer {
   background-color: #414141;
   width: auto;
