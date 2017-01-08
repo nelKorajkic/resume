@@ -20,16 +20,22 @@ body
     background-color: #414141
     width: auto
     margin: auto
-    padding-left: 500px
-    padding-right: 500px
+    padding-left: 100px
+    padding-right: 100px
     text-align: center
     img
+      transition: ease .5s
       size: 500px
       width: 120px
       display: inline-block
       padding: 20px
       border-radius: 210px
       margin: auto
+
+    img:hover
+      transition: ease .5s
+      border-radius: 0px
+
     p
       color: white
       display: block
@@ -77,7 +83,6 @@ body
       padding: 0
       padding-bottom: 300px
       font-size: 1.2em
-      color: red
       height: 560px
       width: 2400px
       background-size: cover
@@ -86,13 +91,28 @@ body
       //display: block
       .container
         margin-top: 500px
-        img
-          background-color: red
-          width: auto
-          float:left
-          display: inline-block
+
         ul
           list-style-type: none
+          img
+            padding-bottom: 3px
+            width: .6%
+            text-align: center
+            margin: auto
+          #one
+            opacity: 1
+          #two
+            display: none
+            opacity: 1
+          #three
+            display: none
+            opacity: 1
+          #four
+            display: none
+            opacity: 1
+          #five
+            display: none
+            opacity: 1
           li
             padding: .3em
           li a

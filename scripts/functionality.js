@@ -46,3 +46,90 @@ window.onload =timecheck;
     //      $(".out").css({"filter": "blur("+s+"px)" });
     //      console.log(s);
     // });
+    // this kinda of works
+    // $(window).scroll(function(e) {
+    //     var s = 0;
+    //     var s = $(window).scrollTop();
+    //     console.log(s);
+    //     if (s > 1464) {
+    //       document.getElementById("one").style.opacity = '0' ;
+    //     }
+    //     else
+    //       document.getElementById("one").style.opacity = '1' ;
+    //
+    //     if (s > 1464 && s < 1997) {
+    //       document.getElementById("two").style.opacity = '1' ;
+    //     }
+    //     else
+    //       document.getElementById("two").style.opacity = '0' ;
+    //
+    //     if (s > 3301) {
+    //       document.getElementById("three").style.opacity = '1' ;
+    //     }
+    //     else
+    //       document.getElementById("three").style.opacity = '0' ;
+    // });
+
+
+// function scrollCheck(){
+//     if (true) {
+//       console.log("obj");
+//       document.getElementById("one").style.opacity = '0' ;
+//       console.log("done")
+//     }}
+//     window.onload =scrollCheck;
+
+
+$( document ).ready(function() {
+    var offset = $('#personalScroll').offset().top - 100;
+    console.log('offset1',offset);
+    var offset2 = $('#skillsScroll').offset().top-100;
+    console.log('offset2',offset2);
+    var offset3 = $('#educationScroll').offset().top-100;
+    console.log('offset3',offset3);
+    var offset4 = $('#workScroll').offset().top-100;
+    console.log('offset4', offset4);
+    var offset5 = $('#contactScroll').offset().top-100;
+    console.log('offset5:', offset5);
+
+    //this one works
+    $(window).on('scroll', function() {
+         if ( $(window).scrollTop() < offset2 )
+             $('#one').show(100);
+          else {
+            $('#one').hide(100);
+          }
+        });
+    //doesnt work yet
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop() > offset2 && $(window).scrollTop() < offset3)
+          $('#two').hide(100);
+       else {
+         $('#two').show(100);
+       }
+     });
+     //doesnt work yet
+     $(window).on('scroll', function() {
+       if ( $(window).scrollTop() < offset3 && $(window).scrollTop() > offset2 + 100)
+           $('#three').hide(100);
+        else {
+          $('#three').show(100);
+        }
+      });
+      //doesnt work yet
+      $(window).on('scroll', function() {
+        if ( $(window).scrollTop() < offset4 && $(window).scrollTop() > offset3 + 100)
+            $('#four').hide(100);
+         else {
+           $('#four').show(100);
+         }
+       });
+       //doesnt work yet
+       $(window).on('scroll', function() {
+         if ( $(window).scrollTop() < offset5 && $(window).scrollTop() > offset4 + 100)
+             $('#five').hide(100);
+          else {
+            $('#five').show(100);
+          }
+        });
+});

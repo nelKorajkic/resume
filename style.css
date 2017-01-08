@@ -24,18 +24,24 @@ body .linksContainer {
   background-color: #414141;
   width: auto;
   margin: auto;
-  padding-left: 500px;
-  padding-right: 500px;
+  padding-left: 100px;
+  padding-right: 100px;
   text-align: center;
 }
 
 body .linksContainer img {
+  transition: ease .5s;
   size: 500px;
   width: 120px;
   display: inline-block;
   padding: 20px;
   border-radius: 210px;
   margin: auto;
+}
+
+body .linksContainer img:hover {
+  transition: ease .5s;
+  border-radius: 0px;
 }
 
 body .linksContainer p {
@@ -92,7 +98,6 @@ body header nav {
   padding: 0;
   padding-bottom: 300px;
   font-size: 1.2em;
-  color: red;
   height: 560px;
   width: 2400px;
   background-size: cover;
@@ -103,14 +108,39 @@ body header nav .container {
   margin-top: 500px;
 }
 
-body header nav .container img {
-  background-color: red;
-  width: auto;
-  display: inline-block;
-}
-
 body header nav .container ul {
   list-style-type: none;
+}
+
+body header nav .container ul img {
+  padding-bottom: 3px;
+  width: .6%;
+  text-align: center;
+  margin: auto;
+}
+
+body header nav .container ul #one {
+  opacity: 1;
+}
+
+body header nav .container ul #two {
+  display: none;
+  opacity: 1;
+}
+
+body header nav .container ul #three {
+  display: none;
+  opacity: 1;
+}
+
+body header nav .container ul #four {
+  display: none;
+  opacity: 1;
+}
+
+body header nav .container ul #five {
+  display: none;
+  opacity: 1;
 }
 
 body header nav .container ul li {
