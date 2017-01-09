@@ -8,6 +8,20 @@ body
   color: #414141
   margin: 0
 
+  .skillsContainer
+    display: block
+    width: 800px
+    margin: auto
+    overflow: auto
+    pre
+      font-family: 'Sans-Open', sans-serif
+      text-align: center
+  .column1, .column2, .column3
+    text-align: center
+    float: left
+    width: 33%
+    p
+      text-align: center
   .educationSection, .workSection
     p
       text-align: center
@@ -39,6 +53,21 @@ body
       background-size: cover
       background-repeat: no-repeat
       background-color: #414141
+      pre
+          font-family: 'Sans-Open', sans-serif
+          text-align: left
+          line-height: 1.8
+          max-width: 800px
+          margin: auto
+          padding: 0em 1em 1em 1em
+          //width: auto
+          //margin: 0 230px
+          text-decoration: none
+          //display: inline-block
+      pre a
+        text-decoration: none
+        color: white
+
   .workSection
     hr
       border-bottom: 2px solid #f1c77d
@@ -75,20 +104,7 @@ body
       width: auto
       text-align: center
 
-  pre
-      font-family: 'Sans-Open', sans-serif
-      text-align: left
-      line-height: 1.8
-      max-width: 800px
-      margin: auto
-      padding: 0em 1em 1em 1em
-      //width: auto
-      //margin: 0 230px
-      text-decoration: none
-      //display: inline-block
-  pre a
-    text-decoration: none
-    color: white
+
 
   .strongContainer
     //text-align: justify
@@ -126,18 +142,18 @@ body
       background: url('images/topbar3.svg')
       position: fixed
       margin: 0
-      margin-top: -200px
+      margin-top: -100px
       padding: 0
       padding-bottom: 0px
       font-size: 1.2em
-      height: 560px
+      height: 460px
       width: 2400px
       background-size: cover
       background-repeat: no-repeat
       //background-color: black
       //display: block
       .container
-        margin-top: 200px
+        margin-top: 100px
 
         ul
           list-style-type: none
@@ -189,18 +205,18 @@ body
       padding: 0 0 10px 0
     ul
       list-style-type: none
-      margin: 0 200
-      width: auto
+      margin: auto
+      width: 500px
       text-align: center
-      display: block
+      //display: block
       .tagline
+        margin: auto
         display: inline-flex
       img
         fill: #414141
         float:left
         width: auto
         display: inline-block
-        float: left
 
 @keyframes fadein
   from
@@ -297,17 +313,10 @@ a.box
     overflow: auto
 
 
-
-
-
-
-
-
-
-
-
 @media print
   *
+    font-size: 16px
+    margin: 0
     color: #000
     background: none
   p
@@ -321,15 +330,19 @@ a.box
   strong
     font-weight: normal
     font-size: 1em
-  img
+  hr
     visibility: collapse
     display: none
+  img
+    visibility: collapse
+    display: none !important
   .container
     visibility: collapse
   .subTitle
     color: #000
     background: none
-
+  .container2
+    margin-top: -200
 
   body, article
     line-height: 1.1
