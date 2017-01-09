@@ -307,6 +307,9 @@ a.box
 
 
 @media print
+  *
+    color: #000
+    background: none
   p
     color: #000
     background: none
@@ -315,12 +318,26 @@ a.box
     background: none
   nav
     display: none
+  strong
+    font-weight: normal
+    font-size: 1em
+
 
   body, article
+    line-height: 1.1
     width: 100%
     margin: 0
     padding: 0
     font-size: 1em
+    font-family: serif
+
+  a.box
+    display: none
+  pre
+    color: #000
+    background: none
+  .linksContainer
+    display: none
   @page
     margin: 2cm
 
