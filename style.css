@@ -24,9 +24,10 @@ body .skillsContainer pre {
 }
 
 body .column1, body .column2, body .column3 {
-  text-align: center;
+  text-align: justify;
   float: left;
   width: 33%;
+  background-color: darkgray;
 }
 
 body .column1 p, body .column2 p, body .column3 p {
