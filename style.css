@@ -6,7 +6,7 @@
 body {
   font-family: 'Sans-Open', sans-serif;
   background: lightgray;
-  font-size: 1.5em;
+  font-size: 1.45em;
   color: #414141;
   margin: 0;
 }
@@ -384,6 +384,17 @@ a.box {
   strong {
     font-weight: normal;
     font-size: 1em;
+  }
+  img {
+    visibility: collapse;
+    display: none;
+  }
+  .container {
+    visibility: collapse;
+  }
+  .subTitle {
+    color: #000;
+    background: none;
   }
   body, article {
     line-height: 1.1;
