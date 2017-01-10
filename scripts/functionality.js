@@ -98,12 +98,6 @@ $( document ).ready(function() {
       console.log('offset1',offset);
       var offset2 = $('#skillsScroll').offset().top-450;
       console.log('offset2',offset2);
-      var offset3 = $('#educationScroll').offset().top-450;
-      console.log('offset3',offset3);
-      var offset4 = $('#workScroll').offset().top-450;
-      console.log('offset4', offset4);
-      var offset5 = $('#contactScroll').offset().top-700;
-      console.log('offset5:', offset5);
          if ( $(window).scrollTop() < offset2 )
              $('#one').show(100);
          else {
@@ -112,16 +106,11 @@ $( document ).ready(function() {
         });
     //works
     $(window).on('scroll', function() {
-      var offset = $('#personalScroll').offset().top-450;
-      console.log('offset1',offset);
       var offset2 = $('#skillsScroll').offset().top-450;
       console.log('offset2',offset2);
       var offset3 = $('#educationScroll').offset().top-450;
       console.log('offset3',offset3);
-      var offset4 = $('#workScroll').offset().top-450;
-      console.log('offset4', offset4);
-      var offset5 = $('#contactScroll').offset().top-700;
-      console.log('offset5:', offset5);
+
       if ($(window).scrollTop() > offset2 && $(window).scrollTop() < offset3)
           $('#two').show(100);
        else {
@@ -130,16 +119,10 @@ $( document ).ready(function() {
      });
      //works
      $(window).on('scroll', function() {
-       var offset = $('#personalScroll').offset().top-450;
-       console.log('offset1',offset);
-       var offset2 = $('#skillsScroll').offset().top-450;
-       console.log('offset2',offset2);
        var offset3 = $('#educationScroll').offset().top-450;
        console.log('offset3',offset3);
        var offset4 = $('#workScroll').offset().top-450;
        console.log('offset4', offset4);
-       var offset5 = $('#contactScroll').offset().top-700;
-       console.log('offset5:', offset5);
        if ( $(window).scrollTop() > offset3 && $(window).scrollTop() < offset4)
            $('#three').show(100);
         else {
@@ -148,12 +131,6 @@ $( document ).ready(function() {
       });
       //works
       $(window).on('scroll', function() {
-        var offset = $('#personalScroll').offset().top-450;
-        console.log('offset1',offset);
-        var offset2 = $('#skillsScroll').offset().top-450;
-        console.log('offset2',offset2);
-        var offset3 = $('#educationScroll').offset().top-450;
-        console.log('offset3',offset3);
         var offset4 = $('#workScroll').offset().top-450;
         console.log('offset4', offset4);
         var offset5 = $('#contactScroll').offset().top-700;
@@ -166,14 +143,6 @@ $( document ).ready(function() {
        });
        //works
        $(window).on('scroll', function() {
-         var offset = $('#personalScroll').offset().top-450;
-         console.log('offset1',offset);
-         var offset2 = $('#skillsScroll').offset().top-450;
-         console.log('offset2',offset2);
-         var offset3 = $('#educationScroll').offset().top-450;
-         console.log('offset3',offset3);
-         var offset4 = $('#workScroll').offset().top-450;
-         console.log('offset4', offset4);
          var offset5 = $('#contactScroll').offset().top-700;
          console.log('offset5:', offset5);
          if ( $(window).scrollTop() > offset5 )

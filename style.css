@@ -318,7 +318,7 @@ a.box {
   z-index: 1;
   width: 20%;
   margin: 10px auto;
-  background: rgba(60, 60, 60, 0.5);
+  background: #414141;
   padding: 12px;
   border-radius: 2px;
   background-clip: padding-box;
