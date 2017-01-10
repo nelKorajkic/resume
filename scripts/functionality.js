@@ -37,49 +37,6 @@ function timecheck(){
 }}
 window.onload =timecheck;
 
-
-    // BLUR works but it freezes everything and is way too quick
-    // $(window).scroll(function(e) {
-    //     var s = $(window).scrollTop(),
-    //         opacityVal = (s / 200);
-    //     //$('.blurred-image').css('opacity', opacityVal);
-    //      $(".out").css({"filter": "blur("+s+"px)" });
-    //      console.log(s);
-    // });
-    // this kinda of works
-    // $(window).scroll(function(e) {
-    //     var s = 0;
-    //     var s = $(window).scrollTop();
-    //     console.log(s);
-    //     if (s > 1464) {
-    //       document.getElementById("one").style.opacity = '0' ;
-    //     }
-    //     else
-    //       document.getElementById("one").style.opacity = '1' ;
-    //
-    //     if (s > 1464 && s < 1997) {
-    //       document.getElementById("two").style.opacity = '1' ;
-    //     }
-    //     else
-    //       document.getElementById("two").style.opacity = '0' ;
-    //
-    //     if (s > 3301) {
-    //       document.getElementById("three").style.opacity = '1' ;
-    //     }
-    //     else
-    //       document.getElementById("three").style.opacity = '0' ;
-    // });
-
-
-// function scrollCheck(){
-//     if (true) {
-//       console.log("obj");
-//       document.getElementById("one").style.opacity = '0' ;
-//       console.log("done")
-//     }}
-//     window.onload =scrollCheck;
-
-
 $( document ).ready(function() {
     // var offset = $('#personalScroll').offset().top-450;
     // console.log('offset1',offset);
