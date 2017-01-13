@@ -486,6 +486,12 @@ a.box {
     color: #000 !important;
     margin-top: -10px !important;
   }
+  .programs p, .skills p, .languages p {
+    margin-top: -5px !important;
+  }
+  #popout {
+    display: none !important;
+  }
   @page {
     margin: 2cm;
   }
