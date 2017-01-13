@@ -416,6 +416,7 @@ a.box {
   strong {
     font-weight: normal;
     font-size: 1em;
+    text-align: center !important;
   }
   hr {
     visibility: collapse;
@@ -428,14 +429,20 @@ a.box {
   .container {
     visibility: collapse;
   }
-  .subTitle {
-    font-weight: normal;
-    letter-spacing: 0px;
-    color: #000;
-    background: none;
-  }
   .container2 {
-    margin-top: -200;
+    margin-top: -250 !important;
+  }
+  .container2 ul {
+    display: none !important;
+  }
+  .container2 p.aboutMe {
+    margin-top: -50 !important;
+  }
+  .contactContainer {
+    margin-top: -190 !important;
+  }
+  .educationSection, .workSection {
+    line-height: 1;
   }
   body, article {
     line-height: 1.1;
@@ -445,8 +452,11 @@ a.box {
     font-size: 1em;
     font-family: serif;
   }
+  a.out {
+    display: none !important;
+  }
   a.box {
-    display: none;
+    display: none !important;
   }
   pre {
     color: #000;
@@ -454,6 +464,27 @@ a.box {
   }
   .linksContainer {
     display: none;
+  }
+  #personalScroll {
+    display: none;
+  }
+  p.title {
+    font-weight: normal !important;
+    letter-spacing: 0px !important;
+    color: #000 !important;
+    background: none;
+    margin-bottom: -25px !important;
+  }
+  p.subTitle {
+    font-weight: normal !important;
+    letter-spacing: 0px !important;
+    color: #000 !important;
+    background: none;
+    margin-bottom: -10px !important;
+  }
+  p.date {
+    color: #000 !important;
+    margin-top: -10px !important;
   }
   @page {
     margin: 2cm;
@@ -464,17 +495,6 @@ a.box {
   .box, .popup {
     width: 50%;
   }
-  background-color: red;
-  h1 {
-    font-size: 2em;
-    padding-top: 50px;
-  }
-  p {
-    font-size: 1em;
-  }
-}
-
-@media screen and (max-width: 500px) {
   background-color: red;
   h1 {
     font-size: 2em;
